@@ -1,0 +1,49 @@
+.morphbutton{
+  /*overflow: hidden;
+  position: absolute;*/
+
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  /*transition: all .5s;*/
+}
+.morphbutton.active{
+  overflow: inherit;
+}
+.morphbutton::before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+  z-index: 800;
+  opacity: 0;
+  transition: opacity .5s;
+  pointer-events: none;
+}
+.morphbutton.active::before{
+  opacity: 1;
+  pointer-events: auto;
+}
+.morphbutton .morphbutton-content{
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 801;
+  transition: all 2s;
+}
+.morphbutton.active .morphbutton-content{
+  width: 320px !important;
+  height: 400px !important;
+  padding: 20px;
+  left: 50% !important;
+  top: 10px !important;
+  margin-left: -160px;
+  margin-top: 10px;
+  /*z-index: 801;*/
+}
