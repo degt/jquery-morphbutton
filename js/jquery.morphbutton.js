@@ -12,19 +12,52 @@
               var $buttonClose = $this.find('button.morphbutton-close');
               var $content = $this.find('.morphbutton-content');
 
-              $button.click(function(){
-                $content.css({
-                  top: $this.offset().top,
-                  left: $this.offset().left,
-                  width: $button.css('width'),
-                  height: $button.css('height')
-                });
+              $content.css({
+                top: $this.offset().top,
+                left: $this.offset().left,
+                width: $this.css('width'),
+                height: $this.css('height')
+              });
 
-                $this.addClass('active');
+              $button.click(function(){
+                
+                
+                // $content.css('visibility', 'visible');
+                // $content.css({
+                //   top: '',
+                //   left: '',
+                //   width: $this.css('width'),
+                //   height: $this.css('height'),
+                //   visibility: 'hidden'
+                // });
+                // $content.css({
+                //   top: $this.offset().top,
+                //   left: $this.offset().left
+                // //   width: $button.css('width'),
+                // //   height: $button.css('height'),
+                // //   display: 'block'
+                // });
+
+                $content.css('opacity', 1);
+
+                $content.delay(300).queue(function(){
+                  $this.addClass('active');
+                  $(this).dequeue();
+                }).delay(500).queue(function(){
+                  $this.addClass('open');
+                  $(this).dequeue();
+                });
+                
               });
 
               $buttonClose.click(function(){
                 $this.removeClass('active');
+                $this.removeClass('open');
+
+                $content.delay(500).queue(function(){
+                  $content.css('opacity', 0);
+                  $(this).dequeue();
+                });
 
               });
 
