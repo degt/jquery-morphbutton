@@ -37,7 +37,7 @@
                 });
 
                 //Start animating
-                $content.delay(300).queue(function(){
+                $content.delay(100).queue(function(){
                   $content.removeClass('no-transition');
                   $this.addClass('active');
                   $(this).dequeue();
@@ -60,7 +60,7 @@
                   width: $button.css('width'),
                   height: $button.css('height')
                 });
-                
+
                 $content.delay(500).queue(function(){
                   $content.css('opacity', 0);
                   $(this).dequeue();
