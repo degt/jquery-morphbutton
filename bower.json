@@ -17,7 +17,13 @@
     "bower_components",
     "src/bower_components",
     "test",
-    "tests"
+    "tests",
+    "index.html",
+    "fonts",
+    "css/bootstrap.min.css",
+    "css/demo.css",
+    "js/jquery.js",
+    "src"
   ],
   "dependencies": {
     "jquery": "~2.1.1"
