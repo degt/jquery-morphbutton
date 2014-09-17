@@ -16,8 +16,8 @@
               $content.css({
                 top: $this.offset().top,
                 left: $this.offset().left,
-                width: $button.css('width'),
-                height: $button.css('height')
+                width: $button.css('width')
+                // height: $button.css('height')
               });
 
               $content.addClass('no-transition');
@@ -29,10 +29,10 @@
 
                 //Reset position
                 $content.css({
-                  top: $this.offset().top,
-                  left: $this.offset().left,
+                  top: $button.offset().top,
+                  left: $button.offset().left,
                   width: $button.css('width'),
-                  height: $button.css('height'),
+                  maxHeight: $button.css('height'),
                   opacity: 1
                 });
 
@@ -40,6 +40,7 @@
                 $content.delay(100).queue(function(){
                   $content.removeClass('no-transition');
                   $this.addClass('active');
+                  $content.height('');
                   $(this).dequeue();
                 }).delay(500).queue(function(){
                   $this.addClass('open');
@@ -55,10 +56,10 @@
 
                 //Reset position
                 $content.css({
-                  top: $this.offset().top,
-                  left: $this.offset().left,
+                  top: $button.offset().top,
+                  left: $button.offset().left,
                   width: $button.css('width'),
-                  height: $button.css('height')
+                  maxHeight: $button.css('height')
                 });
 
                 $content.delay(500).queue(function(){

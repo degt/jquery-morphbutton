@@ -32,7 +32,7 @@ a{
   background-color: white;
 }
 .white-box.morphbutton.active .morphbutton-content{
-  height: 310px !important;
+  /*height: 310px !important;*/
 }
 .white-box h2{
   color: #67c2d4;
