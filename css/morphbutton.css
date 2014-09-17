@@ -26,7 +26,7 @@
   /*transition: all .5s;*/
 }
 .morphbutton.active{
-  overflow: inherit;
+  /*overflow: inherit;*/
 }
 .morphbutton::before{
   position: fixed;
@@ -75,10 +75,34 @@
   pointer-events: auto;
   /*z-index: 801;*/
 }
+.no-transition{
+  transition: none !important;
+}
 .morphbutton .morphbutton-content *{
   opacity: 0;
 }
 .morphbutton.open .morphbutton-content *{
   opacity: 1;
+}
+
+.morphbutton .morphbutton-content p:first-child {
+  color: red;
+  transition-delay: 0.4s;
+}
+.morphbutton .morphbutton-content p:nth-child(2) {
+  color: blue;
+  transition-delay: 0.45s;
+}
+
+.morphbutton .morphbutton-content p:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+.morphbutton .morphbutton-content p:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+.morphbutton .morphbutton-content p:nth-child(5) {
+  transition-delay: 0.6s;
 }
 
