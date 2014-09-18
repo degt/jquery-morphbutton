@@ -26,6 +26,7 @@
           
                 //Avoid weird moves
                 $content.addClass('no-transition');
+                $this.addClass('animating');
 
                 //Reset position
                 $content.css({
@@ -44,6 +45,7 @@
                   $(this).dequeue();
                 }).delay(500).queue(function(){
                   $this.addClass('open');
+                  $this.removeClass('animating');
                   $(this).dequeue();
                 });
 
@@ -53,6 +55,7 @@
               $buttonClose.click(function(){
                 $this.removeClass('active');
                 $this.removeClass('open');
+                $this.addClass('animating');
 
                 //Reset position
                 $content.css({
@@ -64,6 +67,7 @@
 
                 $content.delay(500).queue(function(){
                   $content.css('opacity', 0);
+                  $this.removeClass('animating');
                   $(this).dequeue();
                 });
 

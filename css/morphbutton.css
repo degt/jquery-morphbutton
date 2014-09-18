@@ -13,7 +13,12 @@
 .morphbutton-open{
   width: 100%;
   opacity: 1;
-  transition: opacity .1s .5s;
+  /*transition: opacity 1s .3s;*/
+}
+.morphbutton.animating .morphbutton-open,
+.morphbutton.active .morphbutton-open{
+  opacity: 0;
+  /*transition: opacity .2s .3s;*/
 }
 
 /* Boxes */
@@ -47,42 +52,39 @@
   opacity: 1;
   pointer-events: auto;
 }
-.morphbutton.active .morphbutton-open{
-  opacity: 0;
-}
+
 .morphbutton .morphbutton-content{
   width: 0;
   /*height: 0;*/
   left: 0;
   top: 0;
-  margin-left: 0;
-  margin-top: 0;
+  margin-left: auto;
+  margin-top: auto;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(0);
+  transform:  translate(0, 0);
 
   overflow: hidden;
   position: fixed;
   z-index: 801;
   transition-timing-function: cubic-bezier(0.7,0,0.3,1);
   /*transition-timing-function: cubic-bezier(0, 1.05, 0, 1);*/
-  transition: opacity 0.3s 0.0s, 
-              width 0.4s 0.1s, 
-              top 0.4s 0.1s, 
-              left 0.4s 0.1s, 
-              margin 0.4s 0.1s,
-              padding 0.4s 0.1s,
-              max-height 0.5s 0.0s, 
-              transform 0.5s 0.0s;
+  transition: opacity     0.3s 0.0s,
+              width       0.4s 0.1s,
+              left        0.4s 0.1s,
+              top         0.4s 0.1s,
+              padding     0.4s 0.1s,
+              transform   0.4s 0.1s,
+              max-height  0.4s 0.1s;
 }
 .morphbutton.active .morphbutton-content{
   width: 320px !important;
   padding: 20px;
   left: 50% !important;
   top: 50% !important;
-  margin-left: -160px;
+  /*margin-left: -160px;*/
   max-height: 290px !important;
-  transform: translateY(-50%);
+  transform:  translate(-50%, -50%);
   pointer-events: auto;
   
 }
