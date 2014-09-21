@@ -12,6 +12,7 @@
               var $buttonClose = $this.find('button.morphbutton-close');
               var $content = $this.find('.morphbutton-content');
 
+
               //Setup position
               $content.css({
                 top: $this.offset().top,
@@ -23,14 +24,14 @@
               $content.addClass('no-transition');
 
               $button.click(function(){
-          
+
                 //Avoid weird moves
                 $content.addClass('no-transition');
                 $this.addClass('animating');
 
                 //Reset position
                 $content.css({
-                  top: $button.offset().top,
+                  top: $button.offset().top - $(window).scrollTop(),
                   left: $button.offset().left,
                   width: $button.css('width'),
                   maxHeight: $button.css('height'),
@@ -59,7 +60,7 @@
 
                 //Reset position
                 $content.css({
-                  top: $button.offset().top,
+                  top: $button.offset().top - $(window).scrollTop(),
                   left: $button.offset().left,
                   width: $button.css('width'),
                   maxHeight: $button.css('height')
