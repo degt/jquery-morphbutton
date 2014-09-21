@@ -1,7 +1,7 @@
 jquery-morphbutton
 ==================
 
-jQuery plugin inspired on http://tympanus.net/Development/ButtonComponentMorph/index.html
+jQuery plugin inspired by http://tympanus.net/Development/ButtonComponentMorph/index.html
 
 
 demo:
