@@ -1,13 +1,16 @@
 {
   "name": "morphbutton",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     "Daniel Gutierrez <daniel.gutierrez@degt.cl>"
   ],
   "description": "jQuery Morph button",
   "main": "js/jquery.morphbutton.js",
   "keywords": [
-    "jquery"
+    "jquery",
+    "morph",
+    "UI",
+    "modal"
   ],
   "license": "MIT",
   "homepage": "http://www.degt.cl",
