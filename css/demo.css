@@ -42,6 +42,14 @@ a{
   color: #67c2d4;
   padding: 30px 100px;
   border: none;
+  display: inline-block;
+  font-family: sans-serif;
+}
+.big-button:hover{
+  text-decoration: none;
+}
+.box{
+  padding: 10px;
 }
 input{
   width: 100%;

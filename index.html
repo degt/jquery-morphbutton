@@ -26,43 +26,54 @@
   <body>
     <div class="container text-center">
       <h1>jQuery Morphing Buttons</h1>
-      <h2>jQuery plugin inspired on <a href="http://tympanus.net/Development/ButtonComponentMorph/index.html ">http://tympanus.net</a></h2>
-
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
-
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
-
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
+      <h2>jQuery plugin inspired by <a href="http://tympanus.net/Development/ButtonComponentMorph/index.html ">http://tympanus.net</a></h2>
 
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
       
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
-      
-      <div class="text-left">
-      <!--Morph button-->
-      <div class="morphbutton white-box">
-        <button type="button" class="big-button morphbutton-open">Sign up</button>
-        <div class="morphbutton-content">
-          <h2>Sign up</h2>
-          <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
-          <form class="form-horizontal morphbutton-cascade" role="form">
-            <input type="text" placeholder="username">
-            <input type="password" placeholder="password">
-            <input type="submit" value="Sign up">
-          </form>
-        </div>
-      </div>
-      <!--/Morph button-->
+      <p>
+        <a href="#" class="morphbutton big-button" data-target="#test">Sign up</a>
+      </p>
 
-      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
+
+      <p>
+        <a href="#" class="morphbutton big-button" data-target="#test2">Test with text</a>
+      </p>
 
       <p>Curabitur imperdiet mauris lacus, ut viverra ante. Suspendisse eu leo metus, non varius turpis. Phasellus et odio nibh, ultrices fringilla dolor. Nam placerat euismod sapien, id euismod metus tristique ac. Cras vitae nisi tellus, in consectetur massa. Nullam auctor hendrerit dapibus. Suspendisse auctor velit non turpis scelerisque tempor. Nam fringilla velit ut augue eleifend id tempor sem gravida.</p>
 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula.</p>
 
     </div>
 
 
+    <div id="test" class="morphbutton-content">
+      <div class="box">
+        <h2>Sign up</h2>
+        <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
+        <form class="form-horizontal morphbutton-cascade" role="form">
+          <input type="text" placeholder="username">
+          <input type="password" placeholder="password">
+          <input type="submit" value="Sign up">
+        </form>
+      </div>
+    </div>
+
+
+    <div id="test2" class="morphbutton-content">
+      <div class="box">
+        <h2>Test with text</h2>
+        <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
+        <div class="morphbutton-cascade">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sem lectus. Donec diam metus, luctus ac tempus quis, imperdiet ut ligula. Curabitur imperdiet mauris lacus, ut viverra ante. Suspendisse eu leo metus, non varius turpis. Phasellus et odio nibh, ultrices fringilla dolor. Nam placerat euismod sapien, id euismod metus .</p>
+        </div>
+      </div>
+    </div>
 
 
 
