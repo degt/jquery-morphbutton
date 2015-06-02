@@ -24,7 +24,6 @@ $box-bg-color:  white;
     width:  100%  !important;
     max-height: 100%  !important;
     pointer-events: auto;
-    // opacity: 1;
 
     visibility: visible;
     
@@ -57,17 +56,12 @@ body::before{
   transition: opacity .5s .2s;
   pointer-events: none;
 }
-// body.morphbutton-modal-active{
-//   overflow: hidden;
-// }
+
 body.morphbutton-modal-active::before{
   opacity: 1;
   pointer-events: auto;
 }
 
-// .morphbutton.fullwidth{
-//   width: 100%;
-// }
 //Buttons 
 .morphbutton-close{
   top: 0;
@@ -76,76 +70,6 @@ body.morphbutton-modal-active::before{
   border: none;
   position: absolute;
 }
-// .morphbutton-open{
-//   width: 100%;
-//   opacity: 1;
-// }
-// .morphbutton.animating .morphbutton-open,
-// .morphbutton.active .morphbutton-open{
-//   opacity: 0;
-// }
-
-// //Boxes 
-// .morphbutton{
-//   display: inline-block;
-//   overflow: hidden;
-//   position: relative;
-// }
-// .morphbutton.active{
-// }
-// .morphbutton::before{
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background-color: rgba(0,0,0,0.5);
-//   content: '';
-//   z-index: 800;
-//   opacity: 0;
-//   transition: opacity .5s;
-//   pointer-events: none;
-// }
-// .morphbutton.active::before{
-//   opacity: 1;
-//   pointer-events: auto;
-// }
-
-// .morphbutton .morphbutton-content{
-//   width: 0;
-//   left: 0;
-//   top: 0;
-//   margin-left: auto;
-//   margin-top: auto;
-//   opacity: 0;
-//   pointer-events: none;
-//   transform:  translate(0, 0);
-
-//   overflow: hidden;
-//   position: fixed;
-//   z-index: 801;
-//   transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-//   transition: opacity     0.3s 0.0s,
-//               width       0.4s 0.1s,
-//               left        0.4s 0.1s,
-//               top         0.4s 0.1s,
-//               padding     0.4s 0.1s,
-//               transform   0.4s 0.1s,
-//               max-height  0.4s 0.1s;
-// }
-// .morphbutton.active .morphbutton-content{
-//   width: 320px !important;
-//   padding: 20px;
-//   left: 50% !important;
-//   top: 50% !important;
-//   max-height: 290px !important;
-//   transform:  translate(-50%, -50%);
-//   pointer-events: auto;
-  
-// }
-// .no-transition{
-//   transition: none !important;
-// }
 
 .morphbutton-content > *{
   opacity: 0;
